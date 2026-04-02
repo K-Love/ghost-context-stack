@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control</title>
+    <style>
+        :root { --accent: #4ade80; --bg: #0a0a0a; --card: #161616; --text: #eee; --muted: #888; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); padding: 2rem; margin: 0; }
+        .dashboard { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        h1 { grid-column: 1 / -1; font-weight: 800; border-bottom: 2px solid #222; padding-bottom: 1rem; margin-top: 0; }
+        .card { background: var(--card); border: 1px solid #282828; border-radius: 12px; padding: 1.25rem; position: relative; }
+        .card h3 { margin: 0 0 0.5rem 0; color: var(--accent); font-size: 1.1rem; }
+        .card p { margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.4; }
+        .status { margin-top: 1rem; font-family: monospace; font-size: 0.8rem; padding: 0.4rem; background: #000; border-radius: 4px; color: #60a5fa; }
+        .badge { position: absolute; top: 1.25rem; right: 1.25rem; font-size: 0.7rem; background: #222; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>R&D MISSION CONTROL</h1>
+        <div class="card" id="herbcraft-card">
+            <h3>🌿 HerbCraft pSEO</h3>
+            <p>Directory scaling. ToS/Privacy live. GA active (G-Y7JYY85G6Q).</p>
+            <div class="status">Pages: 21</div>
+        </div>
+        <div class="card"><h3>🐦 X (Twitter) Growth</h3><p>Revenue share sprint. @iamklove. Human-tone alerts active.</p><div class="status">Next Sprint: Hourly</div></div>
+        <div class="card"><h3>🧠 Claude Emulation</h3><p>High-reasoning, deep-context persona active.</p><div class="status">Mode: Advanced Reasoning</div></div>
+        <div class="card"><h3>🚀 Mission Control</h3><p>Centralized project tracking (this dashboard).</p><div class="status">Server: 127.0.0.1:8080</div></div>
+        <div class="card"><h3>🪴 Bonsai: Urban Zenith</h3><p>Apartment-friendly indoor bonsai niche. Reviews, guides, & upsells.</p><div class="status">Niche: Indoor/Beginner</div></div>
+        <div class="card"><h3>🎨 Phanterra</h3><p>Relaxation coloring books. "Bonsai Series" cross-over pending.</p><div class="status">Status: KDP Research</div></div>
+        <div class="card"><h3>💼 Backstage Interactive</h3><p>Redesign + AI Tools (Stripe) + Agency/Studio split.</p><div class="status">Status: Planning</div></div>
+        <div class="card"><h3>⚖️ R&D Council</h3><p>5-model autonomous debate engine (Alex Finn style).</p><div class="status">Checks: 9am / 5pm</div></div>
+        <div class="card"><h3>🏢 Super Affiliate Machine</h3><p>CPA/Tuan Vy style scaling engine.</p><div class="status">Status: Planning</div></div>
+        <div class="card"><h3>🐎 Horse Racing Predictor</h3><p>Insanely accurate winner prediction web app.</p><div class="status">Status: Planning</div></div>
+        <div class="card" id="reverb-card">
+            <h3>⚡ RE-VERB (SaaS)</h3>
+            <p>The Context Cloner. CLI Pro + Web Beta. Launching Monday.</p>
+            <div class="status">Status: V1.1 Readiness Check</div>
+        </div>
+        <div class="card"><h3>⚾ Fantasy Baseball</h3><p>Season tracking. Drafted 3/24, Slot #2. 10-team H2H Weekly.</p><div class="status">Grade: D- (CBS) | Period 1: Underdog</div></div>
+        <div class="card"><h3>✨ Special Project</h3><p>The "Notoriety" project to put K-Love on the map.</p><div class="status">Status: Ideating</div></div>
+    </div>
+    <script>
+        function updateMetrics() {
+            fetch('/herbcraft/herbs.json')
+                .then(r => r.json())
+                .then(d => {
+                    const el = document.getElementById('herb-status');
+                    if (el) el.innerText = 'Pages: ' + d.length;
+                })
+                .catch(e => {
+                    console.error('Metric sync failed', e);
+                    const el = document.getElementById('herb-status');
+                    if (el) el.innerText = 'Pages: 23 (Check Logs)';
+                });
+        }
+        setInterval(updateMetrics, 5000);
+        updateMetrics();
+    </script>
+</body>
+</html>
