@@ -12,7 +12,7 @@ def generate_herb_pages():
         template = f.read()
 
     # Ensure herbs directory exists
-    os.makedirs('herbs', exist_ok=True)
+    os.makedirs('herbcraft/herbs', exist_ok=True)
 
     for herb in herbs:
         filename = f"herbcraft/herbs/{herb['id']}.html"

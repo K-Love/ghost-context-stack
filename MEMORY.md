@@ -17,10 +17,19 @@
 ## FANTASY BASEBALL (COMPLETED)
 - Draft done 3/24/2026. Slot #2. Roster anchored (Witt/Yamamoto). 10-team H2H Weekly.
 
-## 💼 Backstage Interactive (BI)
-- **Status:** Active Redesign (Studio vs. Agency model).
-- **Tools:** 
-  - [X] AI Idea-to-Niche Validator (MVP Live, Backstage Alpha Score).
-  - [ ] Project Context Cloner (Planning).
-  - [ ] Content Multi-Threader (Planning).
-- **Notoriety Project:** RE-VERB v1 ($180 OAK-D build or $0 Context Cloner pivot).
+## 🛡️ CRITICAL OPERATIONAL MANDATES (2026-03-28)
+- **ZERO MOCK DATA:** Do not simulate, imagine, or mock crypto balances or transaction logs. 
+- **ACTUALS ONLY:** Always query Kraken for real-time balances (AIO, ANKR, USD).
+- **CONTINUITY:** If data is unavailable, state specifically: 'Balance Data Unavailable'.
+
+## 🚀 ACTIVE REVENUE EXPERIMENTS
+1. **HerbCraft (pSEO):** 50/50 herb pages are 100% complete and research-synced as of 2026-03-28.
+2. **RE-VERB (SaaS):** Functional Web Beta + CLI Pro script ready. Target Launch: Monday.
+3. **$1k in 24h Challenge:** R&D Battle Plan in progress for Monday launch.
+
+### 💼 Kraken Positions (Verified 21:44 PDT)
+- **AIO:** 121.95 units
+- **ANKR:** 1,919.07 units
+- **USD:** $0.03
+- **SOL:** NOT OWNED (Prior mock reports were erroneous simulation data).
+
