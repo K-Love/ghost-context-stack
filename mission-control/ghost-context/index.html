@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RE-VERB | The Context Cloner</title>
+    <title>Context-Clone | The Context Cloner</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
@@ -32,7 +32,7 @@
 <body class="antialiased selection:bg-white selection:text-black">
 
     <nav class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="text-xl font-black tracking-tighter italic">RE-VERB</div>
+        <div class="text-xl font-black tracking-tighter italic">Context-Clone</div>
         <div class="flex gap-8 text-sm font-medium text-neutral-400">
             <a href="#features" class="hover:text-white transition">Features</a>
             <a href="#docs" class="hover:text-white transition">Docs</a>
@@ -45,7 +45,7 @@
             Clones Any Repo<br>to Any Model.
         </h1>
         <p class="text-xl md:text-2xl text-neutral-500 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Stop manual copy-pasting. RE-VERB injects entire codebases into <b>Claude, GPT-4, Gemini, and Local LLMs</b> with zero signal loss.
+            Stop manual copy-pasting. Context-Clone injects entire codebases into <b>Claude, GPT-4, Gemini, and Local LLMs</b> with zero signal loss.
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center">
             <a href="#pricing" class="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-neutral-200 transition">Get CLI Pro</a>
@@ -60,7 +60,7 @@
         </div>
         <div>
             <h3 class="mono text-xs uppercase tracking-widest text-neutral-500 mb-4">The Solution</h3>
-            <p class="text-lg text-neutral-300">RE-VERB crawls your repo, respects <code class="bg-neutral-900 px-1">.gitignore</code>, and outputs a compressed XML/Markdown digest designed for Claude 3.5 Sonnet.</p>
+            <p class="text-lg text-neutral-300">Context-Clone crawls your repo, respects <code class="bg-neutral-900 px-1">.gitignore</code>, and outputs a compressed XML/Markdown digest designed for Claude 3.5 Sonnet.</p>
         </div>
         <div>
             <h3 class="mono text-xs uppercase tracking-widest text-neutral-500 mb-4">The Result</h3>
@@ -76,7 +76,7 @@
                 <ol class="space-y-4 text-neutral-300">
                     <li>1. Click "Launch Context Cloner" below.</li>
                     <li>2. Select your repository folder from your local machine.</li>
-                    <li>3. RE-VERB automatically strips `node_modules`, `.git`, and binary files.</li>
+                    <li>3. Context-Clone automatically strips `node_modules`, `.git`, and binary files.</li>
                     <li>4. Click "Copy Context" to grab the optimized XML/Markdown digest.</li>
                     <li>5. Paste the entire block into your favorite LLM (Claude, GPT, Gemini).</li>
                 </ol>
@@ -85,8 +85,8 @@
                 <h3 class="mono text-xs uppercase tracking-widest text-neutral-500 mb-6">CLI Pro (Power Users)</h3>
                 <ol class="space-y-4 text-neutral-300">
                     <li>1. Purchase your unique License Key below.</li>
-                    <li>2. Install via curl: <code class="bg-neutral-900 px-1 py-0.5 rounded text-white italic text-xs tracking-tighter">curl -fsSL re-verb.sh/install | sh</code></li>
-                    <li>3. Run <code class="bg-neutral-900 px-1 py-0.5 rounded text-white italic text-xs tracking-tighter">re-verb . --key YOUR_KEY</code> inside any project folder.</li>
+                    <li>2. Install via curl: <code class="bg-neutral-900 px-1 py-0.5 rounded text-white italic text-xs tracking-tighter">curl -fsSL Context-Clone.sh/install | sh</code></li>
+                    <li>3. Run <code class="bg-neutral-900 px-1 py-0.5 rounded text-white italic text-xs tracking-tighter">Context-Clone . --key YOUR_KEY</code> inside any project folder.</li>
                     <li>4. Use <code class="bg-neutral-900 px-1 py-0.5 rounded text-white italic text-xs tracking-tighter">--prompt</code> to append specific tasks directly to the context.</li>
                 </ol>
             </div>
@@ -129,7 +129,7 @@
             <div id="outputModal" class="fixed inset-0 bg-black/95 z-50 hidden flex flex-col p-6 animate-in fade-in duration-300">
                 <div class="max-w-5xl mx-auto w-full flex flex-col h-full">
                     <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-2xl font-black italic tracking-tighter">RE-VERB <span class="text-xs border px-2 py-0.5 rounded-full not-italic tracking-normal align-middle ml-2 opacity-50">BETA</span></h3>
+                        <h3 class="text-2xl font-black italic tracking-tighter">Context-Clone <span class="text-xs border px-2 py-0.5 rounded-full not-italic tracking-normal align-middle ml-2 opacity-50">BETA</span></h3>
                         <div class="flex gap-4">
                             <button id="copyBtn" class="px-6 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-neutral-200 transition">Copy Context</button>
                             <button id="closeModal" class="px-6 py-2 border border-neutral-800 text-sm font-bold rounded-full hover:bg-neutral-900 transition">Close</button>
@@ -168,7 +168,7 @@
                     <div class="text-3xl font-black">$29<span class="text-sm font-normal text-neutral-600">/one-time</span></div>
                 </div>
                 <ul class="space-y-4 text-neutral-400 mb-12">
-                    <li>✓ <code class="mono text-white">re-verb .</code> command</li>
+                    <li>✓ <code class="mono text-white">Context-Clone .</code> command</li>
                     <li>✓ Binary-aware cloning</li>
                     <li>✓ Custom XML tagging for LLMs</li>
                     <li>✓ Priority token compression</li>
@@ -180,7 +180,7 @@
     </section>
 
     <footer class="max-w-5xl mx-auto px-6 py-24 text-center text-neutral-600 text-sm border-t border-neutral-900">
-        &copy; 2026 RE-VERB. Dev by K-Love Prime. Built for the Context Era.
+        &copy; 2026 Context-Clone. Dev by K-Love Prime. Built for the Context Era.
     </footer>
 
     <script src="js/app.js"></script>

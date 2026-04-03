@@ -19,7 +19,7 @@ def generate_context(root_path, output_file="project_context.xml"):
         '.eot', '.mp4', '.mp3', '.wav', '.flac', '.avi', '.mov', '.webm', '.map'
     }
 
-    print(f"🚀 RE-VERB: Scanning {root_path}...")
+    print(f"🚀 Context-Clone: Scanning {root_path}...")
     
     with open(output_file, 'w', encoding='utf-8') as out:
         out.write("<project_context>\n")
@@ -54,7 +54,7 @@ def generate_context(root_path, output_file="project_context.xml"):
     print("📋 Copy the contents of this file into Claude/GPT to begin.")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="RE-VERB CLI Pro - The LLM Context Cloner")
+    parser = argparse.ArgumentParser(description="Context-Clone CLI Pro - The LLM Context Cloner")
     parser.add_argument("path", nargs="?", default=".", help="Path to the project root (default: current dir)")
     parser.add_argument("-o", "--output", default="project_context.xml", help="Output filename")
     

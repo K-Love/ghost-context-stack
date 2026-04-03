@@ -16,7 +16,7 @@
 ## Studio Portfolio Items
 - **HerbCraft**: pSEO Herb Directory (Live)
 - **GhostContext**: Risk-Aversion SaaS (Beta)
-- **RE-VERB**: Developer CLI Pro (Dev)
+- **Context-Clone**: Developer CLI Pro (Dev)
 
 ## Agency Section
 - Migration of existing client work from old `agency.html`.
